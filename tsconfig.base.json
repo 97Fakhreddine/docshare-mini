@@ -16,6 +16,11 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "es2022",
-    "customConditions": ["@docshare-mini/source"]
+    "customConditions": ["@docshare-mini/source"],
+    "paths": {
+      "@docshare-mini/shared": ["packages/shared/src/index.ts"],
+      "@shared": ["packages/shared/src/index.ts"],
+      "@web": ["packages/web/*"]
+    }
   }
 }

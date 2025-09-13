@@ -1,0 +1,9 @@
+{
+  "name": "web",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "packages/web/src",
+  "tags": ["web"],
+  "// targets": "to see all targets run: nx show project web --web",
+  "targets": {}
+}

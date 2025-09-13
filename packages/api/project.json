@@ -1,0 +1,31 @@
+{
+  "name": "api",
+  "projectType": "application",
+  "root": "packages/api",
+  "sourceRoot": "packages/api/src",
+  "tags": ["type:app", "scope:api"],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{workspaceRoot}/dist/packages/api"],
+      "options": {
+        "main": "packages/api/src/main.ts",
+        "tsConfig": "packages/api/tsconfig.app.json"
+      }
+    },
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "packages/api",
+        "command": "nest start"
+      }
+    },
+    "dev": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "packages/api",
+        "command": "nest start --watch"
+      }
+    }
+  }
+}
